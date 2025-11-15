@@ -35,21 +35,61 @@
         <!-- Sub-tabs for Current/Past -->
         <div class="sub-nav">
             <nav class="sub-nav-links" aria-label="Tabs">
-                <a href="#" class="sub-nav-link active">
+                <!-- These 'data-tab-toggle' attributes are targeted by app.js -->
+                <a class="sub-nav-link" data-tab-toggle="current-assignments">
                     Current
                 </a>
-                <a href="#" class="sub-nav-link">
+                <a class="sub-nav-link" data-tab-toggle="past-assignments">
                     Past
                 </a>
             </nav>
         </div>
 
-        <div class="content-box">
-            <div class="content-box-header">
-                <h2 class="content-box-title">Current Assignments</h2>
+        <!-- This div contains the content for the tabs -->
+        <div>
+            <!-- Current Assignments Content (Visible by default) -->
+            <div id="current-assignments" class="sub-tab-content">
+                <div class="card-grid">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Host 2 Trainings</h3>
+                            <h4 class="card-subtitle">Assigned: Nov 12, 2025</h4>
+                            <p class="card-text">Host two (2) standard training sessions before the end of the week.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="text-yellow-400">In Progress (1/2)</span>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Shadow a Sr. Admin</h3>
+                            <h4 class="card-subtitle">Assigned: Nov 10, 2025</h4>
+                            <p class="card-text">Arrange a time to shadow a Senior Administrator during a shift.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="text-yellow-400">In Progress (0/1)</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="content-box-body">
-                <p>A list of current assignments will be displayed here.</p>
+
+            <!-- Past Assignments Content (Hidden by default) -->
+            <div id="past-assignments" class="sub-tab-content">
+                <div class="card-grid">
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Complete Basic Training</h3>
+                            <h4 class="card-subtitle">Assigned: Nov 1, 2025</h4>
+                            <p class="card-text">Complete the standard trainee curriculum and pass the final exam.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="text-green-400">Completed (Nov 8, 2025)</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
