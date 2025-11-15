@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS JS Test</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #282c34;
+            color: white;
+            margin: 0;
+        }
+
+        #content-box {
+            text-align: center;
+            padding: 40px;
+            border-radius: 10px;
+            background-color: #444;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            color: #61dafb; /* A blue color */
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #282c34;
+            background-color: #61dafb;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #00bfff; /* Brighter blue on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="content-box">
+        <h1 id="main-heading">Hello from HTML!</h1>
+        <p id="main-paragraph">This page is styled with CSS.</p>
+        <button id="test-button">Click Me!</button>
+    </div>
+
+    <script>
+        // Wait for the document to be fully loaded
+        document.addEventListener('DOMContentLoaded', (event) => {
+            
+            // Get references to our HTML elements
+            const button = document.getElementById('test-button');
+            const heading = document.getElementById('main-heading');
+            const paragraph = document.getElementById('main-paragraph');
+
+            // Add a click event listener to the button
+            button.onclick = function() {
+                // Change the heading's text and color
+                heading.textContent = "JavaScript Worked!";
+                heading.style.color = "#98fb98"; // A light green color
+
+                // Change the paragraph's text
+                paragraph.textContent = "You successfully ran the JavaScript code.";
+                
+                // You can also log to the browser's console
+                console.log("Button was clicked!");
+            };
+        });
+    </script>
+
+</body>
+</html>
