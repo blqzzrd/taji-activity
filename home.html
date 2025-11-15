@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Activity Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Shared Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">easy<span class="nav-logo-span">Activity</span></div>
+                <div class="nav-links">
+                    <a href="home.html" class="nav-link">Home</a>
+                    <a href="sessions.html" class="nav-link">Sessions</a>
+                    <a href="leaderboard.html" class="nav-link">Leaderboard</a>
+                    <a href="assignments.html" class="nav-link">Assignments</a>
+                    <a href="minutes.html" class="nav-link">Minutes</a>
+                    <a href="settings.html" class="nav-link">Settings</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="content-header">
+            <h1 class="header-title">Home Dashboard</h1>
+            <p class="header-subtitle">Live activity from all connected game servers.</p>
+        </header>
+
+        <div class="content-box">
+            <div class="content-box-header">
+                <h2 class="content-box-title">Live Activity</h2>
+            </div>
+            <div class="table-wrapper">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Status</th>
+                            <th>Messages</th>
+                            <th>Time Active</th>
+                            <th>Server</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-700">
+                        <!-- Example Row -->
+                        <tr>
+                            <td class="text-white">Strovi</td>
+                            <td class="text-green-400">Online</td>
+                            <td>142</td>
+                            <td>2h 15m</td>
+                            <td>Training Center [A]</td>
+                        </tr>
+                        <!-- More rows would be added here, likely via a script -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
