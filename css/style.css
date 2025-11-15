@@ -1,0 +1,211 @@
+/* style.css
+  Shared styles for the easyActivity Dashboard
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* gray-900 */
+    color: #f3f4f6; /* gray-100 */
+    margin: 0;
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+    background-color: rgba(17, 24, 39, 0.8); /* gray-900/80 */
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-container {
+    max-width: 80rem; /* 1280px */
+    margin: 0 auto;
+    padding: 0 1rem; /* sm:px-6 lg:px-8 */
+}
+
+@media (min-width: 640px) {
+    .nav-container {
+        padding: 0 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-container {
+        padding: 0 2rem;
+    }
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem; /* 64px */
+}
+
+.nav-logo {
+    font-size: 1.5rem; /* 2xl */
+    font-weight: 700;
+    color: white;
+}
+
+.nav-logo-span {
+    color: #60a5fa; /* blue-400 */
+}
+
+.nav-links {
+    display: none; /* Hidden on mobile */
+}
+
+@media (min-width: 640px) {
+    .nav-links {
+        display: flex;
+        margin-left: 1.5rem;
+        gap: 2rem; /* space-x-8 */
+    }
+}
+
+.nav-link {
+    color: #9ca3af; /* gray-400 */
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem; /* rounded-md */
+    text-decoration: none;
+    font-size: 0.875rem; /* sm */
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link.active {
+    color: white;
+    border-bottom-color: #60a5fa; /* blue-400 */
+}
+
+/* --- Main Content --- */
+.main-content {
+    max-width: 80rem; /* 1280px */
+    margin: 0 auto;
+    padding: 3rem 1rem; /* py-12 px-4 */
+}
+
+@media (min-width: 640px) {
+    .main-content {
+        padding: 3rem 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-content {
+        padding: 3rem 2rem;
+    }
+}
+
+.content-header {
+    margin-bottom: 2rem; /* mb-8 */
+}
+
+.header-title {
+    font-size: 1.875rem; /* 3xl */
+    font-weight: 700;
+    letter-spacing: -0.025em; /* tracking-tight */
+    color: white;
+    margin: 0;
+}
+
+.header-subtitle {
+    color: #9ca3af; /* gray-400 */
+    margin-top: 0.5rem; /* mt-2 */
+}
+
+/* --- Content Box --- */
+.content-box {
+    background-color: #1f2937; /* gray-800 */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem; /* rounded-lg */
+    overflow: hidden;
+}
+
+.content-box-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #374151; /* border-gray-700 */
+}
+
+.content-box-title {
+    font-size: 1.25rem; /* xl */
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+.content-box-body {
+    padding: 1.5rem;
+    color: #d1d5db; /* gray-300 */
+}
+
+/* --- Table Styles --- */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.table {
+    min-width: 100%;
+    divide-y: 1px solid #374151; /* divide-gray-700 */
+}
+
+.table thead {
+    background-color: #374151; /* bg-gray-700 */
+}
+
+.table th {
+    padding: 0.75rem 1.5rem;
+    text-align: left;
+    font-size: 0.75rem; /* xs */
+    font-weight: 500;
+    color: #d1d5db; /* gray-300 */
+    text-transform: uppercase;
+    letter-spacing: 0.05em; /* tracking-wider */
+}
+
+.table td {
+    padding: 1rem 1.5rem;
+    white-space: nowrap;
+    font-size: 0.875rem; /* sm */
+}
+
+/* --- Sub-Tabs --- */
+.sub-nav {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #374151; /* border-gray-700 */
+}
+
+.sub-nav-links {
+    display: flex;
+    gap: 2rem; /* space-x-8 */
+}
+
+.sub-nav-link {
+    border-bottom: 2px solid transparent;
+    color: #9ca3af; /* gray-400 */
+    white-space: nowrap;
+    padding: 1rem 0.25rem; /* py-4 px-1 */
+    font-size: 0.875rem; /* sm */
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.sub-nav-link:hover {
+    color: #d1d5db; /* gray-200 */
+    border-color: #4b5563; /* gray-500 */
+}
+
+.sub-nav-link.active {
+    border-color: #60a5fa; /* blue-400 */
+    color: white;
+}
