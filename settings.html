@@ -33,12 +33,48 @@
         </header>
 
         <div class="content-box">
-            <div class="content-box-header">
-                <h2 class="content-box-title">Configuration</h2>
-            </div>
-            <div class="content-box-body">
-                <p>User preferences and API key management would go here.</p>
-            </div>
+            <form>
+                <!-- User Preferences Section -->
+                <div class="content-box-body">
+                    <h2 class="content-box-title" style="font-size: 1.125rem; padding: 0; margin-bottom: 1.5rem;">User Preferences</h2>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="theme-select">Theme</label>
+                        <select class="form-select" id="theme-select">
+                            <option value="dark">Dark (System)</option>
+                            <option value="light">Light</option>
+                        </select>
+                        <p class="form-description">Controls the visual theme of the dashboard.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="timezone-select">Timezone</label>
+                        <select class="form-select" id="timezone-select">
+                            <option value="est">Eastern Time (EST)</option>
+                            <option value="pst">Pacific Time (PST)</option>
+                            <option value="utc">Coordinated Universal Time (UTC)</option>
+                        </select>
+                        <p class="form-description">Ensures all session times are displayed correctly for you.</p>
+                    </div>
+                </div>
+
+                <!-- API Key Section -->
+                <div class="content-box-body" style="border-top: 1px solid var(--gray-700);">
+                    <h2 class="content-box-title" style="font-size: 1.125rem; padding: 0; margin-bottom: 1.5rem;">API & Integration</h2>
+
+                    <div class="form-group">
+                        <label class="form-label" for="api-key">Your API Key</label>
+                        <input class="form-input" type="password" id="api-key" value="abc123xyz789-THIS-IS-A-FAKE-KEY" readonly>
+                        <p class="form-description">Use this key to link your game servers to the dashboard.</p>
+                    </div>
+                    <button type="button" class="btn btn-secondary">Regenerate Key</button>
+                </div>
+                
+                <!-- Save Button Footer -->
+                <div class="content-box-footer">
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </div>
+            </form>
         </div>
     </main>
 
