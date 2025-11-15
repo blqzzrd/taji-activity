@@ -28,17 +28,49 @@
     <!-- Main Content -->
     <main class="main-content">
         <header class="content-header">
-            <h1 class="header-title">Session History</h1>
-            <p class="header-subtitle">Browse past 25 staff sessions.</p>
+            <h1 class="header-title">Training Sessions</h1>
+            <p class="header-subtitle">View upcoming and past training sessions.</p>
         </header>
 
         <div class="content-box">
             <div class="content-box-header">
-                <h2 class="content-box-title">Past Sessions</h2>
+                <h2 class="content-box-title">Session Schedule</h2>
             </div>
-            <div class="content-box-body">
-                <p>Session history table will be displayed here.</p>
-                <p>This would show user, server, join time, leave time, duration, and message count.</p>
+            <div class="table-wrapper">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Host</th>
+                            <th>Session Type</th>
+                            <th>Date & Time</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-white">Strovi</td>
+                            <td>Standard Training</td>
+                            <td>Nov 15, 2025 @ 7:00 PM EST</td>
+                            <td><span class="text-green-400">Upcoming</span></td>
+                            <td><a href="#" class="btn btn-secondary" style="font-size: 0.75rem; padding: 0.25rem 0.75rem;">View</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-white">Jane</td>
+                            <td>Interviews</td>
+                            <td>Nov 15, 2025 @ 5:00 PM EST</td>
+                            <td><span class="text-gray-400">Concluded</span></td>
+                            <td><a href="#" class="btn btn-secondary" style="font-size: 0.75rem; padding: 0.25rem 0.75rem;">View Log</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-white">BuilderMan</td>
+                            <td>Standard Training</td>
+                            <td>Nov 14, 2025 @ 6:00 PM EST</td>
+                            <td><span class="text-gray-400">Concluded</span></td>
+                            <td><a href="#" class="btn btn-secondary" style="font-size: 0.75rem; padding: 0.25rem 0.75rem;">View Log</a></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </main>
