@@ -23,22 +23,62 @@
                 </div>
             </div>
         </div>
-    </NaveN>
+    </nav>
 
     <!-- Main Content -->
     <main class="main-content">
         <header class="content-header">
-            <h1 class="header-title">Minutes Log</h1>
-            <p class="header-subtitle">Detailed minute-by-minute activity breakdown for sessions.</p>
+            <h1 class="header-title">Staff Session History</h1>
+            <p class="header-subtitle">Browse the last 25 individual staff sessions (in-game time).</p>
         </header>
 
         <div class="content-box">
             <div class="content-box-header">
-                <h2 class="content-box-title">Session Details</h2>
+                <h2 class="content-box-title">Recent Staff Activity</h2>
             </div>
-            <div class="content-box-body">
-                <p>This page would allow viewing detailed logs for a specific session.</p>
-                <p>For example, selecting a session (like <code>#session1</code> from the URL) would show a timeline of activity.</p>
+            <div class="table-wrapper">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Session ID</th>
+                            <th>User</th>
+                            <th>Server</th>
+                            <th>Time In</th>
+                            <th>Time Out</th>
+                            <th>Duration</th>
+                            <th>Messages</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#session1" class="text-blue-400">#session1</a></td>
+                            <td class="text-white">Strovi</td>
+                            <td>Training Center [A]</td>
+                            <td>18:32</td>
+                            <td>20:47</td>
+                            <td>2h 15m</td>
+                            <td>142</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#session2" class="text-blue-400">#session2</a></td>
+                            <td class="text-white">BuilderMan</td>
+                            <td>Main Game [US-1]</td>
+                            <td>19:15</td>
+                            <td>20:47</td>
+                            <td>1h 32m</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#session3" class="text-blue-400">#session3</a></td>
+                            <td class="text-white">Jane</td>
+                            <td>Main Game [EU-2]</td>
+                            <td>20:02</td>
+                            <td>20:47</td>
+                            <td>0h 45m</td>
+                            <td>31</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </main>
