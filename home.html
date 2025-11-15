@@ -32,9 +32,30 @@
             <p class="header-subtitle">Live activity from all connected game servers.</p>
         </header>
 
+        <!-- Stat Cards -->
+        <div class="stat-grid">
+            <div class="stat-card">
+                <h3 class="stat-card-title">Staff Online</h3>
+                <p class="stat-card-value">12</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="stat-card-title">Servers Active</h3>
+                <p class="stat-card-value">4</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="stat-card-title">Trainings Today</h3>
+                <p class="stat-card-value">3</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="stat-card-title">Messages Sent (24h)</h3>
+                <p class="stat-card-value">1,428</p>
+            </div>
+        </div>
+
+        <!-- Live Activity Table -->
         <div class="content-box">
             <div class="content-box-header">
-                <h2 class="content-box-title">Live Activity</h2>
+                <h2 class="content-box-title">Live Staff Activity</h2>
             </div>
             <div class="table-wrapper">
                 <table class="table">
@@ -47,16 +68,35 @@
                             <th>Server</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y divide-gray-700">
-                        <!-- Example Row -->
+                    <tbody>
                         <tr>
                             <td class="text-white">Strovi</td>
-                            <td class="text-green-400">Online</td>
+                            <td><span class="text-green-400">Online</span></td>
                             <td>142</td>
                             <td>2h 15m</td>
                             <td>Training Center [A]</td>
                         </tr>
-                        <!-- More rows would be added here, likely via a script -->
+                        <tr>
+                            <td class="text-white">BuilderMan</td>
+                            <td><span class="text-green-400">Online</span></td>
+                            <td>88</td>
+                            <td>1h 32m</td>
+                            <td>Main Game [US-1]</td>
+                        </tr>
+                        <tr>
+                            <td class="text-white">Jane</td>
+                            <td><span class="text-yellow-400">Away</span></td>
+                            <td>31</td>
+                            <td>0h 45m</td>
+                            <td>Main Game [EU-2]</td>
+                        </tr>
+                        <tr>
+                            <td class="text-white">ActiveAdmin</td>
+                            <td><span class="text-gray-400">Offline</span></td>
+                            <td>5</td>
+                            <td>0h 10m</td>
+                            <td>N/A</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
